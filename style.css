@@ -1,6 +1,17 @@
+:root {
+    interpolate-size: allow-keywords;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
 body{
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 div:first-child{
@@ -15,14 +26,87 @@ div:first-child{
 }
 
 ul{
-
     list-style: none;
     display: flex;
+    width: 100vw;
+    height:90vh;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+li:nth-of-type(2){
+    align-self: flex-start;
+
 }
 
 li{
-    background: red;
+    background: radial-gradient(circle, rgb(255, 230, 250) 0%, rgb(168, 209, 255) 100%);
+    border-radius: 100%;
     height: 8em;
     width: 8em;
     margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+li:first-of-type button {
+    anchor-name: --laurens;
+}
+
+li:first-of-type details {
+    position: fixed;
+    position-anchor: --laurens;
+    position-area: block-end;
+}
+
+li:first-of-type details button {
+    anchor-name: --CMD;
+}
+
+li:first-of-type details p:nth-of-type(2) {
+    position: fixed;
+    position-anchor: --CMD;
+    position-area: block-end span-inline-start;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+details {
+    overflow: hidden;
+    border: none;
+}
+
+details > p {
+    padding-block: 1rem;
+}
+
+Details::details-content {
+    block-size: 0;
+    transition: block-size 1s,
+    content-visibility 1s;;
+    transition-behavior: allow-discrete;   
+    font-size : .7em; 
+}
+
+Details[open]::details-content {
+    block-size: auto;
+}
+
+img {
+    height: 70%;
+    width: 75%;
+
+}
+
+summary {
+    display: flex;
+    justify-content: center;
 }
