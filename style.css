@@ -76,11 +76,21 @@ li:nth-of-type(2) details button {
 }
 
 li:nth-of-type(2) details p:nth-of-type(2) {
+    border-radius: 1em;
     position: fixed;
+    border: solid;
     position-anchor: --detailquy;
     position-area: block-end span-inline-start;
-    border: none;
-    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+li:nth-of-type(2) :popover-open{
+    border-radius: 1em;
+    border: solid;
+    background-color:rgb(17, 176, 41);
+    color: rgb(0, 0, 0);
+    padding: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 button {
