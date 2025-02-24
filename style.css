@@ -54,7 +54,7 @@ li:first-of-type details button {
     anchor-name: --CMD;
 }
 
-li:first-of-type details p:nth-of-type(2) {
+li:first-of-type details div {
     position: fixed;
     position-anchor: --CMD;
     position-area: block-end span-inline-start;
@@ -101,7 +101,7 @@ summary {
 }
 
 :popover-open {
-    background-color:rgba(220, 220, 220, 30%);
+    background-color:rgba(220, 220, 220);
     color: black;
     padding: 0.5em;
 }
