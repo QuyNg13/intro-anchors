@@ -25,7 +25,6 @@ ul{
 
 li:nth-of-type(2){
     align-self: flex-start;
-
 }
 
 li{
@@ -57,9 +56,17 @@ li:first-of-type details button {
 li:first-of-type details div {
     position: fixed;
     position-anchor: --CMD;
-    position-area: block-end span-inline-start;
-    border: none;
+    position-area: block-start span-inline-end;
+    border: 1px solid black;
+    background-color: white;
+    width: 30%;
 }
+
+li:first-of-type details div img {
+    height: 20%;
+    width: 20%;
+}
+
 
 li:nth-of-type(2) button {
     anchor-name: --quy;
