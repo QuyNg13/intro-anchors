@@ -129,9 +129,19 @@ li:nth-of-type(3) details button {
 li:nth-of-type(3) details p:nth-of-type(2) {
     position: fixed;
     position-anchor: --CMD2;
-    position-area: block-end span-inline-start;
+    position-area: bottom span-right;
+    margin-top: 4em;
     border:none;
     max-width:15em;
+}
+
+li:nth-of-type(3) :popover-open{
+    border-radius: 1em;
+    border: none;
+    background-color:rgba(241, 241, 241, 0.7);
+    color: rgb(0, 0, 0);
+    padding: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 button {
