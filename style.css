@@ -14,15 +14,7 @@ body{
     align-items: center;
 }
 
-div:first-child{
-    position-anchor: --laurens;
-    position-area: center;
-    position: absolute;
-    background-color: aquamarine;
-    height: 8em;
-    width:8em;
-    border-radius: 100%;
-}
+
 
 ul{
     list-style: none;
@@ -69,6 +61,27 @@ li:first-of-type details button {
 li:first-of-type details p:nth-of-type(2) {
     position: fixed;
     position-anchor: --CMD;
+    position-area: block-end span-inline-start;
+}
+/* lilian */
+
+li:nth-of-type(3) button {
+    anchor-name: --Lilian;
+}
+
+li:nth-of-type(3) details {
+    position: fixed;
+    position-anchor: --Lilian;
+    position-area: inline-end;
+}
+
+li:nth-of-type(3) details button {
+    anchor-name: --CMD2;
+}
+
+li:nth-of-type(3) details p:nth-of-type(2) {
+    position: fixed;
+    position-anchor: --CMD2;
     position-area: block-end span-inline-start;
 }
 
