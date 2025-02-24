@@ -14,8 +14,6 @@ body{
     align-items: center;
 }
 
-
-
 ul{
     list-style: none;
     display: flex;
@@ -40,9 +38,7 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-
 
 li:first-of-type button {
     anchor-name: --laurens;
@@ -62,6 +58,7 @@ li:first-of-type details p:nth-of-type(2) {
     position: fixed;
     position-anchor: --CMD;
     position-area: block-end span-inline-start;
+    border: none;
 }
 /* lilian */
 
@@ -89,11 +86,14 @@ button {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    color:blue;
 }
 
 details {
     overflow: hidden;
     border: none;
+    margin: 3em;
+    width: 20%;
 }
 
 details > p {
@@ -115,10 +115,16 @@ Details[open]::details-content {
 img {
     height: 70%;
     width: 75%;
-
 }
 
 summary {
-    display: flex;
-    justify-content: center;
+    font-size: small;
 }
+
+:popover-open {
+    background-color:rgba(220, 220, 220, 30%);
+    color: black;
+    padding: 0.5em;
+}
+
+
