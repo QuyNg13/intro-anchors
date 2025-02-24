@@ -1,23 +1,28 @@
-root {
+:root {
     interpolate-size: allow-keywords;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    display: flex;
-    justify-content: center;
+   display: grid;
+
 }
 
 ul{
-
     list-style: none;
     display: flex;
+    justify-content: space-around;
 }
 
 li{
     background: red;
-    height: 8em;
+    /* height: 8em;
     width: 8em;
-    margin: 1em;
+    margin: 1em; */
 }
 
 li:first-of-type button {
@@ -37,6 +42,8 @@ button {
 
 details {
     overflow: hidden;
+    border: none;
+
 }
 
 details > p {
@@ -45,9 +52,13 @@ details > p {
 
 Details::details-content {
     block-size: 0;
+
 }
 
 Details[open]::details-content {
     block-size: auto;
 }
 
+img {
+    height: 50%;
+}
