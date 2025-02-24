@@ -15,14 +15,13 @@ body{
 }
 
 div:first-child{
+    position-anchor: --laurens;
+    position-area: center;
+    position: absolute;
     background-color: aquamarine;
     height: 8em;
     width:8em;
     border-radius: 100%;
-    justify-content: center;
-    align-items: center;
-
-    
 }
 
 ul{
