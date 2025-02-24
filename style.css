@@ -60,7 +60,7 @@ li:first-of-type button {
 li:first-of-type details {
     position: fixed;
     position-anchor: --laurens;
-    position-area: block-end;
+    position-area: inline-end;
 }
 
 li:first-of-type details button {
