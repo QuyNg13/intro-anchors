@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 body{
@@ -41,7 +42,6 @@ li{
 }
 
 
-
 li:first-of-type button {
     anchor-name: --laurens;
 }
@@ -52,15 +52,25 @@ li:first-of-type details {
     position-area: inline-end;
 }
 
+li:first-of-type details button {
+    anchor-name: --CMD;
+}
+
+li:first-of-type details p:nth-of-type(2) {
+    position: fixed;
+    position-anchor: --CMD;
+    position-area: block-end span-inline-start;
+}
+
 button {
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 details {
     overflow: hidden;
     border: none;
-
 }
 
 details > p {
@@ -69,7 +79,10 @@ details > p {
 
 Details::details-content {
     block-size: 0;
-
+    transition: block-size 1s,
+    content-visibility 1s;;
+    transition-behavior: allow-discrete;   
+    font-size : .7em; 
 }
 
 Details[open]::details-content {
@@ -82,3 +95,7 @@ img {
 
 }
 
+summary {
+    display: flex;
+    justify-content: center;
+}
