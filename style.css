@@ -15,6 +15,9 @@ body{
 }
 
 div:first-child{
+    position-anchor: --laurens;
+    position-area: center;
+    position: absolute;
     background-color: aquamarine;
     height: 9em;
     width:9em;
