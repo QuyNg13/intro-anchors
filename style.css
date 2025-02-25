@@ -123,6 +123,7 @@ li:nth-of-type(3) details {
 li:nth-of-type(3) details button {
     anchor-name: --CMD2;
     color: rgb(117, 0, 20);
+    font-weight: bold;
 }
 
 li:nth-of-type(3) details p:nth-of-type(2) {
