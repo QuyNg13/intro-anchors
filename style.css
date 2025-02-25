@@ -68,6 +68,8 @@ li:first-of-type details div {
     border: 1px solid black;
     background-color: white;
     width: 30%;
+    margin-bottom: 2em;
+    margin-left: 4em;
 }
 
 
