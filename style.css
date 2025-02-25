@@ -72,6 +72,10 @@ li:first-of-type details div {
     margin-left: 4em;
 }
 
+li:first-of-type details div:popover-open {
+    display: flex;
+}
+
 
 li:nth-of-type(1) :popover-open{
     border-radius: 1em;
